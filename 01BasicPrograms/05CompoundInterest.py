@@ -47,3 +47,13 @@ a=p*(1+(r/100))**t # formula for calculating amount
 ci=a-p # compound interest = amount - principal amount
 # printing compound interest value
 print(ci)
+
+def compound_interest(principal, rate, time):
+	Amount = principal
+	for i in range(time):
+		Amount = Amount * (1 + rate/100)
+	CI = Amount - principal
+	print("Compound interest is", CI)
+# Driver Code
+compound_interest(1200, 5.4, 2)
+#This code is contributed by Jyothi pinjala
