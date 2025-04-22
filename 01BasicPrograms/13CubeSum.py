@@ -16,3 +16,8 @@ n = 5
 res = sum(i**3 for i in range(1, n + 1))
 
 print(res)
+
+
+n = 5
+res = sum([(i+1) ** 3 for i, _ in enumerate(range(n))])
+print(res)
