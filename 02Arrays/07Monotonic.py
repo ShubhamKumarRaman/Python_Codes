@@ -66,3 +66,18 @@ arr3 = [2, 2, 2, 3]
 print(is_monotonic(arr1))  
 print(is_monotonic(arr2))  
 print(is_monotonic(arr3))
+
+
+def is_monotonic(arr):
+    increasing = all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))
+    decreasing = all(arr[i] >= arr[i + 1] for i in range(len(arr) - 1))
+
+    return increasing or decreasing
+
+# Example
+input_array1 = [6, 5, 4, 4]
+input_array2 = [5, 15, 20, 10]
+result1 = is_monotonic(input_array1)
+result2 = is_monotonic(input_array2)
+print(result1)  
+print(result2)
