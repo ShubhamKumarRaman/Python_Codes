@@ -11,3 +11,10 @@ a = [1, 2, 3, 4, 5]
 rev = a[::-1]
 
 print(rev)
+
+a = [1, 2, 3, 4, 5]
+
+# Use reversed() to create an iterator
+# and convert it back to a list
+rev = list(reversed(a))
+print(rev)
