@@ -18,3 +18,14 @@ a = [1, 2, 3, 4, 5]
 # and convert it back to a list
 rev = list(reversed(a))
 print(rev)
+
+a = [1, 2, 3, 4, 5]
+
+# Initialize an empty list to store reversed element
+res = []
+
+# Loop through each item and insert
+# it at the beginning of new list
+for val in a:
+    res.insert(0, val)
+print(res)
