@@ -29,3 +29,22 @@ res = []
 for val in a:
     res.insert(0, val)
 print(res)
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Define the start and end indices
+start, end = 2, 6
+
+# Reverse the elements from index 2 to 6
+while start < end:
+  
+    # Swap elements at start and end
+    a[start], a[end] = a[end], a[start]
+    
+    # Move the start index forward
+    start += 1
+    
+     # Move the end index backward
+    end -= 1
+
+print(a)
