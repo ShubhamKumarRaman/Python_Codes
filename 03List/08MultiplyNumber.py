@@ -12,3 +12,12 @@ a = [2, 4, 8, 3]
 res = math.prod(a)  
 
 print(res)
+
+# Using reduce() and mul()
+from functools import reduce
+from operator import mul
+
+a = [2, 4, 8, 3]
+res = reduce(mul, a)
+
+print(res)
