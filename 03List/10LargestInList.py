@@ -18,3 +18,12 @@ for val in a:
         largest = val
 
 print(largest)
+
+from functools import reduce
+
+a = [10, 24, 76, 23, 12]
+
+# Find the largest number using reduce
+largest = reduce(lambda x, y: x if x > y else y, a)
+
+print(largest)
