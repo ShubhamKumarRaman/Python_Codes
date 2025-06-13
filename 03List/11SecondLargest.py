@@ -25,3 +25,11 @@ for n in a:
         max2 = n  
 
 print(max2)
+
+a = [10, 20, 4, 45, 99]
+
+# Sorting the list in descending order
+a.sort(reverse=True)
+
+# Second largest number will be at index 1
+print(a[1])
