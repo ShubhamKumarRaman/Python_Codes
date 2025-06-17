@@ -69,3 +69,25 @@ def Nmaxelements(list1, N):
 list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
 N = 3
 print(Nmaxelements(list1, N))
+
+# python program to find n largest elements in the given list
+# Initializing the list
+list = [2, 1, 8, 7, 3, 0, 9, 4]
+n = 3
+res = []
+list1 = []
+
+# printing the original list
+print('The given list is:', list)
+
+# using sorted()
+list1 = sorted(list, reverse=True)
+for i in range(0, n):
+    res.append(list1[i])
+
+# list after sorting
+print('The sorted list is:', list1)
+
+# printing the n largest elements in the list
+print('The ', n, ' largest elements in the given list are:', res)
+
