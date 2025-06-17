@@ -58,3 +58,14 @@ print(find_n_largest_elements(lst, N))
 lst = [81, 52, 45, 10, 3, 2, 96]
 N = 3
 print(find_n_largest_elements(lst, N))
+
+
+import numpy as np
+
+def Nmaxelements(list1, N):
+    list1 = np.array(list1) # convert list to numpy array
+    return list1[np.argsort(list1)[-N:]]
+
+list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+N = 3
+print(Nmaxelements(list1, N))
