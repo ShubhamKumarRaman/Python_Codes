@@ -12,3 +12,11 @@ end = 10
 # Iterate through the range (start to end + 1)
 odd_numbers = [num for num in range(start, end + 1) if num % 2 != 0]
 print(odd_numbers)
+
+start = 1
+end = 10
+
+for num in range(start, end + 1):
+  # # Check if the last bit is 1 (odd number)
+    if num & 1: 
+        print(num)
