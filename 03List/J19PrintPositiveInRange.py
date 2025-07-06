@@ -14,3 +14,12 @@ end = 3
 # Use list comprehension to filter positive numbers and print them
 res = [val for val in range(start, end + 1) if val > 0]
 print(res)
+
+start = -5
+end = 3
+
+# Use filter to get positive numbers
+res = filter(lambda val: val > 0, range(start, end + 1))
+
+# Convert filter object to list and print
+print(list(res))
