@@ -22,3 +22,15 @@ remove = [20, 40, 60]
 a = [x for x in a if x not in remove]
 
 print(a)
+
+a = [10, 20, 30, 40, 50, 60, 70]
+
+# Elements to remove
+remove = [20, 40, 60]
+
+# Remove elements using remove() in a loop
+for val in remove:
+    while val in a:
+        a.remove(val)
+
+print(a)
