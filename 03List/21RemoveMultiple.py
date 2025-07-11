@@ -34,3 +34,13 @@ for val in remove:
         a.remove(val)
 
 print(a)
+
+a = [10, 20, 30, 40, 50, 60, 70]
+
+# Elements to remove
+remove = {20, 40, 60}
+
+# Remove elements using filter
+a = list(filter(lambda x: x not in remove, a))
+
+print(a)
