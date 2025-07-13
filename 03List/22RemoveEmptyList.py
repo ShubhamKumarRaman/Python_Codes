@@ -10,3 +10,8 @@ for b in a:
 
 print(res)
 
+a = [[1, 2], [], [3, 4], [], [5]]
+res = [b for b in a if b]
+
+print(res)
+
