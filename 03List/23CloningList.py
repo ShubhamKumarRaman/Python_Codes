@@ -12,3 +12,10 @@ b = a[:]
 
 print(b)
 
+a = [1, 2, 3, 4, 5]
+
+# Copying the list using list()
+b = list(a)
+
+print(b)
+
